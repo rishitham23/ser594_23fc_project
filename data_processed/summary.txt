@@ -1,0 +1,5 @@
+Attribute Statistics:
+           body_len    word_count  avg_word_length  unique_word_count
+min      300.000000     23.000000         3.540541          17.000000
+max   143034.000000  24242.000000        74.741935        7317.000000
+mean    3488.458006    575.509961         6.115487         313.447936
