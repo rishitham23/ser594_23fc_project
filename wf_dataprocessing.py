@@ -14,7 +14,7 @@ import string
 
 pd.set_option('display.max_colwidth', 100)
 
-data = pd.read_csv('C:/Users/rmalempa/Desktop/edu/594/Project/data_original/WELFake_Dataset (1).csv', index_col=0, )
+data = pd.read_csv('/Users/apparilalith/Documents/rishitha/part2/Project/data_original/WELFake_Dataset (1).csv', index_col=0, encoding='ISO-8859-1', dtype=str)
 
 data = data.fillna(' ')
 
@@ -92,6 +92,7 @@ data['punct%'] = data['text_lower'].apply(lambda x: count_punct(x))
 data['body_len'] = data['text'].apply(lambda x: len(x))
 data['word_count'] = data['text'].apply(lambda x: len(x.split()))
 data['avg_word_length'] = data['body_len'] / data['word_count']
+
 # Function to count unique words
 def count_unique_words(text):
     words = text.split()
@@ -99,4 +100,9 @@ def count_unique_words(text):
     return len(unique_words)
 
 data['unique_word_count'] = data['text'].apply(count_unique_words)
-data.to_csv("C:/Users/rmalempa/Desktop/edu/594/Project/data_processed/dataset_reduced.csv")
+result_df = data[['text_stemmed', 'body_len' , 'punct%', 'word_count', 'avg_word_length', 'unique_word_count', 'label']]
+result_df.to_csv("/Users/apparilalith/Documents/rishitha/part2/Project/data_processed/dataset_reduced.csv")
+
+
+def process_data(raw_data):
+    return None
