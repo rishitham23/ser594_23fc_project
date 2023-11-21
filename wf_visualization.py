@@ -139,3 +139,9 @@ plt.ylabel('Counts')
 plt.tight_layout()
 plt.savefig('Visuals/Top10Words.png')
 # plt.show()
+def generate_statistics(processed_data):
+    return None
+
+
+def generate_visuals(processed_data):
+    return None
