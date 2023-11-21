@@ -1,4 +1,4 @@
-#### SERX94: Experimentation
+#### SER594: Experimentation
 #### Title: "Navigating Misinformation: A Text Classification Approach to Fake News Detection"
 #### Author: Rishitha Malempati
 #### Date: 11/20/2023
